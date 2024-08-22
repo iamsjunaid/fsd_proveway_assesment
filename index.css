@@ -7,22 +7,87 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   background-color: #f6f6f7;
+  align-items: center;
 }
 
 .container {
-  width: 80%;
-  margin: 1rem auto;
-  background-color: #fff;
-  padding: 4rem;
-  border: 2px solid red;
-  height: max-content;
   text-align: center;
+  background-color: #fff;
+  width: 20rem;
+  padding: 1rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: small;
 }
 
 .container h2 {
   color: var(--pink);
-  
+  font: small;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.main__container_section {
+  border: 1px solid red;
+  height: 6rem;
+}
+
+.main__container_section_top {
+  display: flex;
+  align-items: center;
+}
+
+.main__container_section_top_right {
+  text-align: left;
+}
+
+.main__container_section_top_center {
+  margin-right: 1rem;
+}
+
+.main__container_section_top_left {
+  background-color: var(--pink);
+  color: white;
+  width: 4rem;
+  margin-right: 1rem;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+}
+
+.card {
+  border-radius: 0.6rem;
+  box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.quantity{
+    margin-left: 6rem;
+}
+
+.select_size_label,.select_color_label{
+    text-align: left;
+    font-weight: normal;
+}
+
+.card.active {
+  border: 2px solid var(--pink);
+  border-radius: 0.6rem;
+  background-color: #fff9fa;
+  padding: 0.5rem;
+}
+
+.user_selection {
+    padding: 0.4rem 0.4rem;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
 }
