@@ -18,30 +18,11 @@
             <h2>YAY! It's BOGO</h2>
         </header>
         <main class="main__container" id="main_container">
-            <!-- <div class="main__container_section" id="card">
-                <div class="main__container_section_top">
-                    <div class="main__container_section_top_left">
-                        <p>20</p>
-                        <p>Off</p>
-                    </div>
-                    <div class="main__container_section_top_center">
-                        <button class="checkbox" onclick="radioButtonHandler(event)">checkbox</button>
-                    </div>
-
-                    <div class="main__container_section_top_right">
-                        <p>Buy 1 Get 2</p>
-                        <p>$ 18 USD</p>
-                    </div>
-                </div>
-                <div class="main__container_section_bottom">
-                    <div class="quantity_section">quantity</div>
-                </div>
-            </div> -->
             <div class="card">
                 <div class="card-content">
                     <div class="main__container_section_top">
                         <div class="main__container_section_top_left">
-                            <p>20</p>
+                            <p>30%</p>
                             <p>Off</p>
                         </div>
                         <div class="main__container_section_top_center">
@@ -49,7 +30,7 @@
                         </div>
                         <div class="main__container_section_top_right">
                             <p>Buy 1 Get 2</p>
-                            <p>$ 18 USD</p>
+                            <p class="bold">$18.00 USD</p>
                         </div>
                     </div>
                 </div>
@@ -59,16 +40,15 @@
                 <div class="card-content">
                     <div class="main__container_section_top">
                         <div class="main__container_section_top_left">
-                            <p>20</p>
+                            <p>30%</p>
                             <p>Off</p>
                         </div>
                         <div class="main__container_section_top_center">
                             <input type="radio" name="card" class="card-radio">
                         </div>
-                        <div></div>
                         <div class="main__container_section_top_right">
-                            <p>Buy 1 Get 2</p>
-                            <p>$ 18 USD</p>
+                            <p>Buy 2 Get 4</p>
+                            <p class="bold">$24.00 USD</p>
                         </div>
                         <div class="main__container_section_popular">
                             <p>Most Popular</p>
@@ -80,16 +60,16 @@
             <div class="card">
                 <div class="card-content">
                     <div class="main__container_section_top">
-                        <!-- <div class="main__container_section_top_left">
-                            <p>20</p>
+                        <div class="main__container_section_top_left">
+                            <p>10%</p>
                             <p>Off</p>
-                        </div> -->
+                        </div>
                         <div class="main__container_section_top_center">
                             <input type="radio" name="card" class="card-radio">
                         </div>
                         <div class="main__container_section_top_right">
-                            <p>Buy 1 Get 2</p>
-                            <p>$ 18 USD</p>
+                            <p>Buy 3 Get 6 <span class="disc">10% Off</span></p>
+                            <p class="bold">$36.00 USD <s class="disc" id="disc_price">$10.00 USD</s></p>
                         </div>
                     </div>
 
@@ -99,7 +79,7 @@
         <footer class="footer">
             <div class="footer__top">
                 <p>Free Delivery</p>
-                <p>Total: $18.00 USD</p>
+                <p class="bold">Total: $18.00 USD</p>
             </div>
             <div class="footer__center">
                 <button>+ Add to Card</button>
