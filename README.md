@@ -40,7 +40,3 @@ A cart page for an e-commerce website.
 ## Live Demo
 
 [Live Demo](https://fsd-proveway-assesment-ghua.vercel.app/) - Hosted on Vercel.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
