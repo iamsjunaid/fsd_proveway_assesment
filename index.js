@@ -6,7 +6,7 @@ const quantity = `
                     <th class="select_color_label">Color</th>
                 </tr>
                 <tr>
-                    <td>#1</td>
+                    <td class="table_index_columns">#1</td>
                     <td>
                         <select name="size" class="user_selection size">
                             <option value="volvo" selected>S</option>
@@ -25,7 +25,7 @@ const quantity = `
                     </td>
                 </tr>
                 <tr>
-                    <td>#2</td>
+                    <td class="table_index_columns">#2</td>
                     <td>
                         <select name="size" class="user_selection size">
                             <option value="volvo" selected>S</option>
@@ -53,7 +53,7 @@ document.querySelectorAll(".card-radio").forEach((radio) => {
       card.classList.remove("active");
       const existingQuantityDiv = card.querySelector(".quantity");
       if (existingQuantityDiv) {
-        existingQuantityDiv.remove(); // Remove the old quantity div if present
+        existingQuantityDiv.remove();
       }
     });
 
