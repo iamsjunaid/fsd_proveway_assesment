@@ -16,7 +16,7 @@ body {
 .container {
   text-align: center;
   background-color: #fff;
-  width: 20rem;
+  width: 20.8rem;
   padding: 1rem;
   margin: 0;
   position: absolute;
@@ -52,6 +52,18 @@ body {
   text-align: left;
 }
 
+.main__container_section_top_right p > span {
+  background-color: var(--pink);
+  color: #fff;
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.2rem;
+}
+
+.disc {
+  margin-left: 0.5rem;
+  font-size: smaller;
+}
+
 .main__container_section_top_center {
   margin-right: 1rem;
 }
@@ -63,11 +75,12 @@ body {
   margin-right: 1rem;
   border-top-left-radius: 0.6rem;
   border-bottom-left-radius: 0.6rem;
+  border-right: 2px dashed #fff;
 }
 
-.main__container_section_popular{
-    margin-left: 2rem;
-    color: var(--pink);
+.main__container_section_popular {
+  margin-left: 1.4rem;
+  color: var(--pink);
 }
 
 .card {
@@ -75,13 +88,16 @@ body {
   box-shadow: 0 0.5px 0 0 rgba(0, 0, 0, 0.2);
 }
 
-.quantity{
-    margin-left: 6rem;
+.quantity {
+  margin-left: 6rem;
 }
 
-.select_size_label,.select_color_label{
-    text-align: left;
-    font-weight: normal;
+.select_size_label,
+.select_color_label,
+.table_index_columns {
+  text-align: left;
+  font-weight: normal;
+  font-size: smaller;
 }
 
 .card.active {
@@ -92,37 +108,53 @@ body {
 }
 
 .user_selection {
-    padding: 0.4rem 0.4rem;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
+  padding: 0.4rem 0.4rem;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
 }
 
-.footer__top{
-    display: flex;
-    justify-content: space-between;
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p:first-child {
+  color: var(--pink);
+
 }
 
 .footer__center {
-    width: 100%;
+  width: 100%;
 }
 
 .footer__center > button {
-    background-color: var(--pink);
-    color: #fff;
-    border:none;
-    padding: 0.5rem 1rem;
-    width: 100%;
-    border-radius: 0.2rem;
+  background-color: var(--pink);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-radius: 0.2rem;
 }
 
 .footer__bottom > p {
-    font-weight: bold;
-    color: red;
-}   
-
-.footer__bottom > p span {
-    font-weight: normal;
-    font-size: small;
-    color: #a0a0a0;
+  font-weight: bold;
+  color: red;
 }
 
+.footer__bottom > p span {
+  font-weight: normal;
+  font-size: small;
+}
+
+.footer__bottom > p span,
+#disc_price {
+  color: #a0a0a0;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+input[type="radio" i] {
+  accent-color: deeppink;
+}
